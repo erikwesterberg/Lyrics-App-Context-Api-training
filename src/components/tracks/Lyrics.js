@@ -30,6 +30,7 @@ class Lyrics extends Component {
 
   render() {
     const { track, lyrics } = this.state;
+    console.log(track)
     if (
       track === undefined ||
       lyrics === undefined ||
@@ -62,9 +63,9 @@ class Lyrics extends Component {
             </li>
             <li className="list-group-item">
             <strong>Release Date</strong>:{" "}
-            {/* <Moment format="MM/DD/YYYY">
-              {track.track.first_release_date}
-            </Moment> */}
+            <Moment format="MM/DD/YYYY">
+              {track.updated_time}
+            </Moment>
           </li>
           </ul>
         </>
