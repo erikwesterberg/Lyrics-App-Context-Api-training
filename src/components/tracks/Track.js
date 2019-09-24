@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 const Track = props => {
   const { track } = props;
   return (
-    <div classNae="col-md-6">
-      <div cassName="card mb-4 shadow-sm">
+    <div className="col-md-6">
+      <div className="card mb-4 shadow-sm">
         <div className="card-body">
           <h5>{track.artist_name}</h5>
           <p className="card-text">
-            <srong>
+            <strong>
               <i className="fas fa-play"></i>track
-            </srong>
+            </strong>
             : {track.track_name}
             <br />
-            <srong>
+            <strong>
               <i className="fas fa-compact-disc"></i>Album
-            </srong>
+            </strong>
             :{track.album_name}
           </p>
           <Link
